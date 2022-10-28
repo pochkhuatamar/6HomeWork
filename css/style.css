@@ -1,0 +1,108 @@
+/*section1*/
+.containter {
+width: 1170px;
+margin: 0 auto;
+}
+
+.ocean {
+	background-image: url("../images/ocean.jpg");
+ 	width: 1170px;
+ 	height: 600px;
+ 	margin: 0 auto;
+
+ 	background-repeat: no-repeat;
+ 	background-size: contain;
+ 	position: relative;
+ 	 box-shadow: 5px 10px;color: lightgoldenrodyellow;
+ 	}
+
+.boat {
+	position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 200px;
+ 	height: 200px;
+    animation: myboat 3s infinite;
+    transform: rotate(10deg)
+
+
+}
+
+@keyframes myboat {
+   0%   {bottom: 0px;}
+  25%  {left: 0.5px;}
+  75%  {bottom: 1px}
+  100% {bottom: 2px;}
+}
+
+
+.rain {
+	width: 100px;
+ 	height: 120px;
+ 	position: absolute;
+ 	lefT: 60%;
+ 	right: 60%;
+ 	transform:  translate(50px,30px); 
+ 	transition: width 2s linear 1s;
+ 	
+}
+.rain:hover {
+width: 140px;
+
+    
+}
+
+.shtorm {
+	width: 100px;
+ 	height: 100px;
+ 	position: absolute;
+ 	lefT: 10%;
+ 	right: 10%;
+ 	top: 2%;
+ 	right: 60%;
+ 	transform:  translate(50px,30px); 
+ 	transition: width 3s ease  ;
+}
+
+.shtorm:hover {
+	width: 180px;
+	color: black;
+}
+
+.whale {
+	width: 150px;
+ 	height: 150px;
+ 	position: absolute;
+ 	top: 10%;
+ 	left: 50%;
+ 	bottom: 60%;
+ 	 animation: mywhale 5s infinite;
+    transform: rotate(10deg)
+ 	
+  
+}
+
+@keyframes mywhale {
+   0%   {top: 200px;}
+  25%  {bottom: 100px;}
+  75%  {top: 250px}
+  100% {bottom: 50px;}
+}
+
+.whale2 {
+	width: 150px;
+ 	height: 150px;
+ 	position: absolute;
+ 	margin: 0 auto;
+ 	 animation: mywhale2 10s infinite;
+    transform: rotate(0deg)
+
+}
+
+
+@keyframes mywhale2 {
+   0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+}
